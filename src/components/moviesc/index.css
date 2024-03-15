@@ -1,4 +1,4 @@
-/* moviesc/index.css */
+
 
 .Moviec {
   display: flex;
@@ -9,7 +9,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  height: 100%; /* Set the card height to 100% of its parent container */
+  height: 100%; 
 }
 
 .Moviec img {
@@ -17,7 +17,7 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1; /* Make the image flexible and take up available space */
+  flex: 1; 
 }
 
 h3 {

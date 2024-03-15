@@ -27,7 +27,7 @@ function Browsecomponents() {
               <Link to="/topc">Top IMDb</Link>
             </MenuItem>
             <MenuItem onClick={popupState.close}>
-              <Link to="/upcoming">Upcoming</Link>
+              <Link to="/userratings">Userratings</Link>
             </MenuItem>
           </Menu>
         </React.Fragment>

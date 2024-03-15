@@ -8,7 +8,7 @@ const RecommendedMovies = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
 
   useEffect(() => {
-    // Fetching recommended movies 
+   
     const fetchRecommendedMovies = async () => {
       try {
         const response = await fetch(`https://api.example.com/movies?key=4b289aba8d2a6c4ae31f299ca6a21723`);

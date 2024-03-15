@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './index.css'; // Import the CSS file for styling
+import './index.css'; 
 
 const TopC = () => {
   const [topRatedMovies, setTopRatedMovies] = useState([]);
@@ -21,13 +21,13 @@ const TopC = () => {
     fetchTopRatedMovies();
   }, []);
 
-  // Function to determine if a movie is one of the highest rated
+  
   const isTopRated = (rating) => {
-    // Define your criteria for what constitutes a "top-rated" movie
-    return rating >= 8.0; // Example: Consider movies with a rating of 8.0 or higher as top-rated
+    
+    return rating >= 8.0; 
   };
 
-  // Group movies into rows with three movies each
+ 
   const rows = [];
   for (let i = 0; i < topRatedMovies.length; i += 3) {
     rows.push(topRatedMovies.slice(i, i + 3));

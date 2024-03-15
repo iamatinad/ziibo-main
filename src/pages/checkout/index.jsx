@@ -1,13 +1,11 @@
 import React from "react";
 import "./index.css";
-// import Logo from '../../assets/images/logoz.png';
+
 
 function Checkout() {
   return (
     <div className="payment">
-      {/* <div>
-            <img src={Logo} alt="Logo-zi" className='logos'/>
-        </div> */}
+      
       <h1 className="green">Payment Information</h1>
       <form>
         <div className="form-group">

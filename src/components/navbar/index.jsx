@@ -10,9 +10,7 @@ import Signupc from "../signupc";
 function Navbar() {
   return (
     <nav className="nav_menu">
-      {/* <Link to="/">
-        <img src={logo} alt="Logo" />
-      </Link> */}
+     
       
       <div>
         <Link to="/">Home</Link>
