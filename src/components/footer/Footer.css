@@ -1,0 +1,35 @@
+.ziibo-footer-container h3{
+  text-align:center;
+}
+
+.ziibo-footer-navigations h4{
+  text-align:center;
+  color:white;
+  
+}
+.ziibo-footer-navigations{
+  background-color: black;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  font-size: large;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links a{
+  text-decoration:none;
+  color: white;
+  opacity: 0.8;
+}
+
+.ziibo-footer-copyright{
+  text-decoration: white;
+  text-align: center;
+}

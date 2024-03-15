@@ -1,0 +1,48 @@
+ .picture{
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+.centered-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+  }
+
+
+
+  .intro{
+    font-size: 4rem;
+  }
+
+  .dive{
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+  }
+
+  .underline{
+   text-decoration: underline;
+   font-weight: bold;
+   /* color: aliceblue; */
+   
+  }
+
+  

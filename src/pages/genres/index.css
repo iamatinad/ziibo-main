@@ -1,0 +1,13 @@
+.genre-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .explore-button {
+    margin-top: 16px;
+    align-self: flex-end;
+  }
+  
