@@ -39,8 +39,7 @@ function Checkout() {
         </div>
 
         <div className="form-group">
-          {/* <label country="state">Country/State:</label>
-          <input type="text" id="state" className="form-control" /> */}
+          
 
           <div>
             <label htmlFor="country">Country</label>
