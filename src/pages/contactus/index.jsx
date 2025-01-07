@@ -60,7 +60,7 @@ function ContactUs() {
             className="contact-image"
           />
           <h3>Diana Dzakah</h3>
-          <p>Tech enthusiast with a degree in education.</p>
+          <p>Excellent team player  with a degree in education.</p>
           <a href="http://wa.me/233552231994" className="contact-link">View Profile</a>
         </div>
       </div>
