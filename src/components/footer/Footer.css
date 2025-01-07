@@ -29,6 +29,11 @@
   opacity: 0.8;
 }
 
+.links a:hover {
+  color: #28a745; 
+  transform: scale(1.1); 
+}
+
 .ziibo-footer-copyright{
   text-decoration: white;
   text-align: center;

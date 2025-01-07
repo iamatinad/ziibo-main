@@ -21,7 +21,7 @@ function Footer() {
       
 
       <div className="ziibo-footer-copyright">
-        @2024 ZIIBO PLC.All Rights Reserved
+        @2024 ZIIBO PLC. All Rights Reserved
       </div>
     </div>
   );
