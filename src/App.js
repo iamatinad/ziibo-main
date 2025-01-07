@@ -8,20 +8,27 @@ import Signup from "./pages/signup";
 import Checkout from "./pages/checkout";
 import GenresPage from "./pages/genres";
 import Popularmovies from "./pages/popularmovies";
+import About from "./pages/about"; 
+import Faqs from "./pages/faqs";
+import ContactUs from "./pages/contactus";
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/seriesc" element={<SeriesPage />}></Route>
-          <Route path="/movies" element={<MoviesPage/>}></Route>
-          <Route path="/genres" element={<GenresPage/>}></Route>
-          <Route path="/topc" element={<TopImbdPage/>}></Route>
-          <Route path="/popular" element={<Popularmovies/>}></Route>
-          <Route path="/signup" element={<Signup/>}></Route>
-          <Route path="/checkout" element={<Checkout/>}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/seriesc" element={<SeriesPage />} />
+          <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/genres" element={<GenresPage />} />
+          <Route path="/topc" element={<TopImbdPage />} />
+          <Route path="/popular" element={<Popularmovies />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/about" element={<About />} /> 
+          <Route path="/faq" element={<Faqs />} /> 
+          <Route path="/contactus" element={<ContactUs />} /> 
         </Routes>
       </BrowserRouter>
     </div>

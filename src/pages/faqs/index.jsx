@@ -9,6 +9,7 @@ function Faqs() {
   return (
     <div className="accordian">
       <Accordion>
+      <h3 className="faq-title">FAQs</h3> {/* Added FAQ title */}
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"

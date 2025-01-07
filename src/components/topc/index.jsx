@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate from react-router
+import { Button } from '@mui/material';  // Import MUI Button
 import './index.css'; 
 
 const TopC = () => {
   const [topRatedMovies, setTopRatedMovies] = useState([]);
+  const navigate = useNavigate(); // Initialize navigate
 
   useEffect(() => {
     const fetchTopRatedMovies = async () => {
@@ -21,21 +24,32 @@ const TopC = () => {
     fetchTopRatedMovies();
   }, []);
 
-  
   const isTopRated = (rating) => {
-    
     return rating >= 8.0; 
   };
 
- 
   const rows = [];
   for (let i = 0; i < topRatedMovies.length; i += 3) {
     rows.push(topRatedMovies.slice(i, i + 3));
   }
 
+  const handleBackToHome = () => {
+    navigate('/'); // Navigate to the homepage when clicked
+  };
+
   return (
     <div>
-      <h2>Top Rated Movies</h2>
+      <h2 className='topp'>Top Rated Movies</h2>
+       
+      <Button 
+        variant="contained" 
+        color="success" 
+        onClick={handleBackToHome}
+        style={{ margin: '20px' }}
+      >
+        Back to Home
+      </Button>
+
       <div className="top-rated-container">
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="row">

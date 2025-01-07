@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation (React Router v6)
 import Moviec from '../../components/moviesc';
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Button } from '@mui/material';
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
+  const navigate = useNavigate(); // Initialize useNavigate hook for navigation
+
+  // Function to truncate the description if it is too long
+  const truncateText = (text, length) => {
+    if (text && text.length > length) {
+      return text.substring(0, length) + "..."; 
+    }
+    return text;
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,15 +34,29 @@ const MovieList = () => {
     fetchData();
   }, []);
 
+  const handleBackToHome = () => {
+    navigate('/'); // Navigate to the homepage when the button is clicked
+  };
+
   return (
-    <Container maxWidth="lg" className="MovieList" >
+    <Container maxWidth="lg" className="MovieList">
       <h2>Movies</h2>
+      {/* Back to Home Button */}
+      <Button
+        variant="contained"
+        color="success" 
+        onClick={handleBackToHome}
+        style={{ marginBottom: '20px' }}
+      >
+        Back to Home
+      </Button>
+
       <Grid container spacing={8}>
         {movies.map((movie) => (
           <Grid item key={movie.id} xs={12} sm={6} md={4} lg={3}>
             <Moviec
               title={movie.title}
-              overview={movie.overview}
+              overview={truncateText(movie.overview, 100)} rs
               releaseDate={movie.release_date}
               posterPath={movie.poster_path}
             />

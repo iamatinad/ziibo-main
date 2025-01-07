@@ -1,16 +1,17 @@
-/* styles.css */
 
-/* Reset some default styles */
+
 body, h1, h2, ul {
     margin: 0;
     padding: 0;
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif
+    
   }
+
   
-  /* MovieList component styles */
+ 
   .MovieList {
     max-width: 800px;
     margin: 0 auto;
@@ -25,5 +26,6 @@ body, h1, h2, ul {
     list-style: none;
     padding: 0;
   }
+  
   
   

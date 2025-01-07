@@ -1,11 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "./index.css";
 
-
 function Checkout() {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleBackToHome = () => {
+    navigate("/"); // Navigate back to home when clicked
+  };
+
   return (
     <div className="payment">
-      
       <h1 className="green">Payment Information</h1>
       <form>
         <div className="form-group">
@@ -39,8 +44,6 @@ function Checkout() {
         </div>
 
         <div className="form-group">
-          
-
           <div>
             <label htmlFor="country">Country</label>
             <span
@@ -81,15 +84,11 @@ function Checkout() {
             <option value="Bermuda">Bermuda</option>
             <option value="Bhutan">Bhutan</option>
             <option value="Bolivia">Bolivia</option>
-            <option value="Bosnia and Herzegovina">
-              Bosnia and Herzegovina
-            </option>
+            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
             <option value="Botswana">Botswana</option>
             <option value="Bouvet Island">Bouvet Island</option>
             <option value="Brazil">Brazil</option>
-            <option value="British Indian Ocean Territory">
-              British Indian Ocean Territory
-            </option>
+            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
             <option value="Brunei Darussalam">Brunei Darussalam</option>
             <option value="Bulgaria">Bulgaria</option>
             <option value="Burkina Faso">Burkina Faso</option>
@@ -99,22 +98,16 @@ function Checkout() {
             <option value="Canada">Canada</option>
             <option value="Cape Verde">Cape Verde</option>
             <option value="Cayman Islands">Cayman Islands</option>
-            <option value="Central African Republic">
-              Central African Republic
-            </option>
+            <option value="Central African Republic">Central African Republic</option>
             <option value="Chad">Chad</option>
             <option value="Chile">Chile</option>
             <option value="China">China</option>
             <option value="Christmas Island">Christmas Island</option>
-            <option value="Cocos (Keeling) Islands">
-              Cocos (Keeling) Islands
-            </option>
+            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
             <option value="Colombia">Colombia</option>
             <option value="Comoros">Comoros</option>
             <option value="Congo">Congo</option>
-            <option value="Congo, The Democratic Republic of The">
-              Congo, The Democratic Republic of The
-            </option>
+            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
             <option value="Cook Islands">Cook Islands</option>
             <option value="Costa Rica">Costa Rica</option>
             <option value="Cote D'ivoire">Cote D'ivoire</option>
@@ -133,18 +126,14 @@ function Checkout() {
             <option value="Eritrea">Eritrea</option>
             <option value="Estonia">Estonia</option>
             <option value="Ethiopia">Ethiopia</option>
-            <option value="Falkland Islands (Malvinas)">
-              Falkland Islands (Malvinas)
-            </option>
+            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
             <option value="Faroe Islands">Faroe Islands</option>
             <option value="Fiji">Fiji</option>
             <option value="Finland">Finland</option>
             <option value="France">France</option>
             <option value="French Guiana">French Guiana</option>
             <option value="French Polynesia">French Polynesia</option>
-            <option value="French Southern Territories">
-              French Southern Territories
-            </option>
+            <option value="French Southern Territories">French Southern Territories</option>
             <option value="Gabon">Gabon</option>
             <option value="Gambia">Gambia</option>
             <option value="Georgia">Georgia</option>
@@ -162,6 +151,21 @@ function Checkout() {
           Submit Payment
         </button>
       </form>
+
+      {/* Back to Home Button */}
+      <button
+        onClick={handleBackToHome}
+        style={{
+          marginTop: "20px",
+          padding: "10px 20px",
+          backgroundColor: "#4CAF50",
+          color: "white",
+          border: "none",
+          cursor: "pointer",
+        }}
+      >
+        Back to Home
+      </button>
     </div>
   );
 }

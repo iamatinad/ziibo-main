@@ -1,0 +1,99 @@
+.contact-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .contact-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .contact-item {
+    flex: 0 0 22%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .contact-image {
+    width: 160px; /* Adjust image size */
+    height: 160px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image fills the circle */
+    border: 4px solid #ddd; /* Optional: Adds border to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow effect */
+  }
+  
+  .contact-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .contact-link {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .back-home-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-item {
+      flex: 0 0 48%; /* Adjust for smaller screen sizes */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-item {
+      flex: 0 0 100%; /* Full width on very small screens */
+    }
+  
+    .contact-image {
+      width: 120px; /* Slightly smaller images for small screens */
+      height: 120px;
+    }
+  }
+  

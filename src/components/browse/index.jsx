@@ -20,15 +20,11 @@ function Browsecomponents() {
             <MenuItem onClick={popupState.close}>
               <Link to="/movies">Movies</Link>
             </MenuItem>
-            <MenuItem onClick={popupState.close}>
-              <Link to="/seriesc">Series</Link>
-            </MenuItem>
+            
             <MenuItem onClick={popupState.close}>
               <Link to="/topc">Top IMDb</Link>
             </MenuItem>
-            <MenuItem onClick={popupState.close}>
-              <Link to="/userratings">Userratings</Link>
-            </MenuItem>
+           
           </Menu>
         </React.Fragment>
       )}

@@ -12,13 +12,13 @@ function Footer() {
       <div className="ziibo-footer-navigations">
         <h4>NAVIGATIONS</h4>
         <div className="links">
-          <a href="/navigation">Home</a>
-          <a href="/navigation">About Us</a>
-          <a href="/navigation">Contact Us</a>
-          <a href="/navigation">FAQs</a>
+          <a href="/">Home</a>
+          <a href="/about">About Us</a>
+          <a href="/contactus">Contact Us</a>
+         
         </div>
       </div>
-      <hr></hr>
+      
 
       <div className="ziibo-footer-copyright">
         @2024 ZIIBO PLC.All Rights Reserved
